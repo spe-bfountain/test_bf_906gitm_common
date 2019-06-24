@@ -3,6 +3,17 @@ this is: real_file_in_common_root
 and it pulled nicely into multiple other repos as a submodule
 so now we are testing out a quick edit to its content
 
+editing the symlink from main1 did not work earlier but maybe now?
+
 now being test-edited by vim/CLI (after pycharm did not work)
 editing the real file (after symlink did not work)
+
+editing either the symlink or the real file works fine via vim/CLI
+simply being in the directory is enough for git to use the correct repo 
+
+this is not smooth (yet?) in pycharm and github desktop 
+
+but I learned from the vim/CLI approach that to avoid conflict,
+we need to git fetch and then git pull from within each (real or referenced) repo.
+then and only then can we have meaningful git status output or git commit success.
 
