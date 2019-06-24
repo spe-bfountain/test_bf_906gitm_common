@@ -17,3 +17,9 @@ but I learned from the vim/CLI approach that to avoid conflict,
 we need to git fetch and then git pull from within each (real or referenced) repo.
 then and only then can we have meaningful git status output or git commit success.
 
+so... after a good deal of testing, it seems pycharm is not part of the problem;
+    github desktop looks like the culprit.
+using the command line git binary, all is well.
+    no problems at all.
+a cursory review of the desktop.github.com open issues shows immature support
+    for referencing an external repo (they call that "submodule") and working with it
