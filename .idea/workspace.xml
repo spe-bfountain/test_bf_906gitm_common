@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="927dbe04-b0e5-427e-83fc-40ab59ed4350" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../main1/dry" beforeDir="false" afterPath="$PROJECT_DIR$/../main1/dry" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../main2/also_dry_too" beforeDir="false" afterPath="$PROJECT_DIR$/../main2/also_dry_too" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../main2/also_dry_too/real_file_in_common_root" beforeDir="false" afterPath="$PROJECT_DIR$/../main2/also_dry_too/real_file_in_common_root" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../main2/also_dry_too/real_file_in_common_root">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="475">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -68,6 +69,11 @@
             </path>
             <path>
               <item name="common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="main1" type="462c0819:PsiDirectoryNode" />
+              <item name="dry" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common" type="b2602c69:ProjectViewProjectNode" />
               <item name="main2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -83,8 +89,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -110,12 +120,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561383104758</updated>
-      <workItem from="1561383106167" duration="495000" />
+      <workItem from="1561383106167" duration="1400000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="495000" />
+    <option name="totallyTimeSpent" value="1400000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -150,8 +160,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../main2/also_dry_too/real_file_in_common_root">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="475">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
