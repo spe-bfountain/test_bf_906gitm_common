@@ -2,3 +2,5 @@ this is: real_file_in_common_subdir
 
 making an edit to the common code from within the common repo
 (we expect this to be visible in the repos that reference it)
+
+next change, to see that git pull --recurse-submodules works as expected
