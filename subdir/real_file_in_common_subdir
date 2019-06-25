@@ -6,3 +6,6 @@ making an edit to the common code from within the common repo
 next change, to see that git pull --recurse-submodules works as expected
 
 one more edit, but letting GitUp have a stab at what GithubDesktop can't
+
+OK, Fork totally showed up GithubDesktop AND GitUp with one dead-simple
+checkbox in the Fork preferences: "Update submodules automatically"
