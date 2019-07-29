@@ -23,3 +23,9 @@ using the command line git binary, all is well.
     no problems at all.
 a cursory review of the desktop.github.com open issues shows immature support
     for referencing an external repo (they call that "submodule") and working with it
+
+
+-- coming back Mon 29 Jul to revisit this and find out what will be our best approach
+
+
+1. editing real_file_in_common_root in PyCharm, from within the common repo area
