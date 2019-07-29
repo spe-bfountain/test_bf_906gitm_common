@@ -29,3 +29,11 @@ a cursory review of the desktop.github.com open issues shows immature support
 
 
 1. editing real_file_in_common_root in PyCharm, from within the common repo area
+
+(had to do a fast forward on one project, in order to see the changes in common)
+(other project had detached head trouble; did 'git checkout master' to recover)
+(seems a 'git submodule update --remote --merge' 
+	might have been in order, instead of 'git pull --recurse-submodules')
+
+2. editing real_file_in_common_root with vim, from within the m1 project
+
