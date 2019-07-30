@@ -79,3 +79,7 @@ If the common code's "git status" reports that it is in a detached HEAD state:
     Step 11: git checkout master
     Step 12: git pull
 
+
+
+git submodule update --remote && git submodule foreach git checkout master && git submodule foreach git pull
+
