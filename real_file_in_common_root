@@ -27,7 +27,6 @@ a cursory review of the desktop.github.com open issues shows immature support
 
 -- coming back Mon 29 Jul to revisit this and find out what will be our best approach
 
-
 1. editing real_file_in_common_root in PyCharm, from within the common repo area
 
 (had to do a fast forward on one project, in order to see the changes in common)
@@ -39,9 +38,9 @@ a cursory review of the desktop.github.com open issues shows immature support
 
 3. editing real_file_in_common_root with vim, from within the m2 project
 
---
 
-OK, here's how this works:
+
+-- OK, here's how this works (smoothly and reliably):
 
 Step 1: git submodule update --remote --merge
 before you make any changes, be sure you have the latest and greatest
@@ -68,4 +67,9 @@ Step 8: git push
 Step 9 from within the common code repo: git pull
 Step 9 from within any other project referencing the common code: git pull --recurse-submodules
 
+
+Step 10 (verify): git status
+If the common code's "git status" reports that it is in a detached HEAD state:
+    Step 11: git checkout master
+    Step 12: git pull
 
