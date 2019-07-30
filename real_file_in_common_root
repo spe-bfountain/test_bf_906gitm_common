@@ -3,7 +3,10 @@ this is: real_file_in_common_root
 and it pulled nicely into multiple other repos as a submodule
 so now we are testing out a quick edit to its content
 
-                sas was here, and then got moved over
+                SAS was here, 
+                 and then got moved over, 
+                  and then got uppercased,
+                   and we love a trailing comma,
 
 editing the symlink from main1 did not work earlier but maybe now?
 
