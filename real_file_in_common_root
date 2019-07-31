@@ -47,7 +47,7 @@ a cursory review of the desktop.github.com open issues shows immature support
 
 -- OK, here's how this works (smoothly and reliably):
 
-Step 1: git submodule update --remote --merge
+Step 1: git submodule update --remote && git submodule foreach git checkout master && git submodule foreach git pull
 (highly recommended) before you make any changes, be sure you have the latest and greatest
 
 Step 2: from within a project that references the common code, edit a file
@@ -61,7 +61,7 @@ Step 4: git diff
 Step 5: git add ___
 stage the changes
 
-Step 6: git submodule update --remote --merge
+Step 6: git submodule update --remote && git submodule foreach git checkout master && git submodule foreach git pull
 find out in advance about anyone else's changes to the repo while you were editing
 
 Step 7: git commit
@@ -80,6 +80,4 @@ If the common code's "git status" reports that it is in a detached HEAD state:
     Step 12: git pull
 
 
-
-git submodule update --remote && git submodule foreach git checkout master && git submodule foreach git pull
 
