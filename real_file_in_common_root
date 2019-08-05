@@ -3,6 +3,11 @@ this is: real_file_in_common_root
 and it pulled nicely into multiple other repos as a submodule
 so now we are testing out a quick edit to its content
 
+                SAS was here, 
+                 and then got moved over, 
+                  and then got uppercased,
+                   and we love a trailing comma,
+
 editing the symlink from main1 did not work earlier but maybe now?
 
 now being test-edited by vim/CLI (after pycharm did not work)
@@ -27,7 +32,6 @@ a cursory review of the desktop.github.com open issues shows immature support
 
 -- coming back Mon 29 Jul to revisit this and find out what will be our best approach
 
-
 1. editing real_file_in_common_root in PyCharm, from within the common repo area
 
 (had to do a fast forward on one project, in order to see the changes in common)
@@ -36,4 +40,44 @@ a cursory review of the desktop.github.com open issues shows immature support
 	might have been in order, instead of 'git pull --recurse-submodules')
 
 2. editing real_file_in_common_root with vim, from within the m1 project
+
+3. editing real_file_in_common_root with vim, from within the m2 project
+
+
+
+-- OK, here's how this works (smoothly and reliably):
+
+Step 1: git submodule update --remote && git submodule foreach git checkout master && git submodule foreach git pull
+(highly recommended) before you make any changes, be sure you have the latest and greatest
+
+Step 2: from within a project that references the common code, edit a file
+
+Step 3: git status
+(optional) see the changes not yet staged
+
+Step 4: git diff
+(optional) see the details of what changed
+
+Step 5: git add ___
+stage the changes
+
+Step 6: git submodule update --remote && git submodule foreach git checkout master && git submodule foreach git pull
+find out in advance about anyone else's changes to the repo while you were editing
+
+Step 7: git commit
+
+Step 8: git push
+
+
+Step 9 from within the common code repo: git pull
+Step 9 from within any other project referencing the common code: git pull --recurse-submodules
+
+
+Step 10 (verify): git status
+If the common code's "git status" reports that it is in a detached HEAD state:
+(and there may be a cleaner way, if/when this happens... some way I have yet to discover)
+    Step 11: git checkout master
+    Step 12: git pull
+
+
 
